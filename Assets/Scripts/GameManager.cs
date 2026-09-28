@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public CanvasGroup GameOverScreen;
     void Start()
     {
-        
+        CanvasGroupDisplayer.Hide(GameOverScreen);
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    public void EndGame()
     {
-        
+        CanvasGroupDisplayer.Show(GameOverScreen);
+    }
+
+    public void OnClickRestartGame()
+    {
+        CanvasGroupDisplayer.Hide(GameOverScreen);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

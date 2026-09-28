@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,19 +6,17 @@ public class Player : MonoBehaviour
 {
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
+    public GameManager GameManager;
     
-    // I know this should be a seperate class. this is just for testing purposes
+    
+    // I know this should be a separate class. this is just for testing purposes
     void Jump()
     {
         // Make the bird jump by applying an upward force.
         rb.linearVelocity = Vector2.up * GameParameters.PlayerJumpForce;
     }
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    
     public void MoveManually(Vector2 direction)
     {
         //if (!Game.IsGameRunning())
@@ -47,4 +46,15 @@ public class Player : MonoBehaviour
             Jump();
         } 
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.CompareTag("DieDieDie"))
+        {
+            GameManager.EndGame();
+            print("Game Over");
+        }
+    }
+    
 }
