@@ -5,6 +5,11 @@ public class KeyboardInput : MonoBehaviour
 {
     public Player Player;
     
+    public static bool IsInteractKeyPressed()
+    {
+        return (Keyboard.current[GameParameters.Interact].wasPressedThisFrame);
+    }
+    
     void Update()
     {
         Keyboard keyboard = Keyboard.current;
