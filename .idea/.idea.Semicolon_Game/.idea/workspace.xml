@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dbd3112-ff9c-468d-bb12-517df435db50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-    </list>
+    <list default="true" id="5dbd3112-ff9c-468d-bb12-517df435db50" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790237705182</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added cinemachine; added follow camera; changed background to a sprite and deleted canvas">
+      <option name="closed" value="true" />
+      <created>1790883675545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790883675545</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +199,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added background art; implemented background canvas/panel and layered player character sprite on top." />
     <MESSAGE value="Buncha Bullshit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buncha Bullshit" />
+    <MESSAGE value="Added cinemachine; added follow camera; changed background to a sprite and deleted canvas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cinemachine; added follow camera; changed background to a sprite and deleted canvas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
