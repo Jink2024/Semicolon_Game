@@ -15,6 +15,7 @@ public class InteractableTile : MonoBehaviour
             Interact();
         }
     }
+    
 
     public virtual void Interact()
     {
