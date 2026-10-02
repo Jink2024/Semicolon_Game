@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dbd3112-ff9c-468d-bb12-517df435db50" name="Changes" comment="" />
+    <list default="true" id="5dbd3112-ff9c-468d-bb12-517df435db50" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semicolon_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semicolon_Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +17,12 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="InteractAddition" />
+    <option name="BRANCH" value="Camera2" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Camera2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,21 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.22f1/Unity.app/Contents/MacOS/Unity" />
@@ -136,6 +139,7 @@
       <workItem from="1790620860942" duration="1204000" />
       <workItem from="1790793235197" duration="1340000" />
       <workItem from="1790882197681" duration="437000" />
+      <workItem from="1790963995433" duration="1042000" />
     </task>
     <task id="LOCAL-00001" summary="Added background art; implemented background canvas/panel and layered player character sprite on top.">
       <option name="closed" value="true" />
@@ -153,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1790883675545</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="IDK">
+      <option name="closed" value="true" />
+      <created>1790904011284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790904011284</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added cinemachine frfr">
+      <option name="closed" value="true" />
+      <created>1790904267201</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790904267201</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +220,9 @@
     <MESSAGE value="Added background art; implemented background canvas/panel and layered player character sprite on top." />
     <MESSAGE value="Buncha Bullshit" />
     <MESSAGE value="Added cinemachine; added follow camera; changed background to a sprite and deleted canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added cinemachine; added follow camera; changed background to a sprite and deleted canvas" />
+    <MESSAGE value="IDK" />
+    <MESSAGE value="Added cinemachine frfr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cinemachine frfr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
