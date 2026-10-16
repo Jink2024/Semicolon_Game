@@ -6,6 +6,7 @@ TagManager:
   tags:
   - OnTrigger
   - DieDieDie
+  - Semicolon
   layers:
   - Default
   - TransparentFX

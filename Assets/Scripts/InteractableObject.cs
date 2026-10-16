@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
-public class InteractableTile : MonoBehaviour
+public class InteractableObject : MonoBehaviour
 {
     private bool isPlayerInRange = false;
     
@@ -15,12 +15,10 @@ public class InteractableTile : MonoBehaviour
             Interact();
         }
     }
-    
 
     public virtual void Interact()
     {
-        //temporary!!!
-        Destroy(gameObject);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -7,7 +7,9 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public GameManager GameManager;
+    public GameObject Semicolon;
     
+    public static bool HasSemicolon = false;
     
     // I know this should be a separate class. this is just for testing purposes
     void Jump()
@@ -44,7 +46,16 @@ public class Player : MonoBehaviour
             //(Input.GetMouseButtonDown(0)) // Check for mouse click or tap.
         {
             Jump();
-        } 
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (KeyboardInput.IsInteractKeyPressed() && HasSemicolon)
+        {
+            PlaceSemicolon();
+            Debug.Log("Placing Item, allegedly");
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -57,4 +68,12 @@ public class Player : MonoBehaviour
         }
     }
     
+    void PlaceSemicolon()
+    {
+        Vector3 offset = new Vector3(0.2f, -0.3f, 0f);
+        Vector3 spawnPosition = spriteRenderer.transform.position + offset;
+        Instantiate(Semicolon, spawnPosition, Quaternion.identity);
+        
+        HasSemicolon = false;
+    }
 }
