@@ -13,15 +13,16 @@ public class Player : MonoBehaviour
     public static bool HasSemicolon = false;
     
     private bool isGrounded;
+    private int jumpCount = 0;
+    public LayerMask groundLayer;
 
     // I know this should be a separate class. this is just for testing purposes
     void Jump()
     {
         // Make the bird jump by applying an upward force.
         rb.linearVelocity = Vector2.up * GameParameters.PlayerJumpForce;
+        jumpCount += 1;
     }
-    
-    
     
     public void MoveManually(Vector2 direction)
     {
@@ -34,16 +35,11 @@ public class Player : MonoBehaviour
     {
         // Useless for now, could be used later.
         //FaceCorrectDirection(direction);
-        
         Vector2 movementAmount = direction * (GameParameters.PlayerMovementSpeed * Time.deltaTime);
-        
         spriteRenderer.transform.Translate(movementAmount.x,0,0);
-
         spriteRenderer.transform.position = SpriteTools.ConstrainToScreen(spriteRenderer);
         //animator.SetFloat("Horizontal", Mathf.Abs(movementAmount.x));
     }
-    
-    public LayerMask groundLayer;
 
     void CheckIsGrounded()
     {
@@ -54,26 +50,23 @@ public class Player : MonoBehaviour
         if (Physics2D.Raycast(rb.transform.position, Vector2.down, 0.1f, groundLayer.value)) 
         {
             isGrounded = true;
+            jumpCount = 0;
         }
-        
         else 
         {
             isGrounded = false;
         }
-        
     }
     
-    // Update is called once per frame
     void Update()
     {
         CheckIsGrounded();
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && jumpCount < 1)
             //(Input.GetMouseButtonDown(0)) // Check for mouse click or tap.
         {
             Jump();
             isGrounded = false;
-
         }
         else
         {
