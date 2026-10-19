@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,8 @@ public class Player : MonoBehaviour
     
     public static bool HasSemicolon = false;
     
+    private bool isGrounded;
+
     // I know this should be a separate class. this is just for testing purposes
     void Jump()
     {
@@ -39,13 +42,41 @@ public class Player : MonoBehaviour
         //animator.SetFloat("Horizontal", Mathf.Abs(movementAmount.x));
     }
     
+    public LayerMask groundLayer;
+
+    void CheckIsGrounded()
+    {
+        Ray ray = default;
+        Debug.DrawRay(ray.origin, ray.direction, Color.red, 0.5f);
+
+        ray = new Ray(transform.position, -transform.up);
+        if (Physics2D.Raycast(rb.transform.position, Vector2.down, 0.1f, groundLayer.value)) 
+        {
+            isGrounded = true;
+        }
+        
+        else 
+        {
+            isGrounded = false;
+        }
+        
+    }
+    
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        CheckIsGrounded();
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
             //(Input.GetMouseButtonDown(0)) // Check for mouse click or tap.
         {
             Jump();
+            isGrounded = false;
+
+        }
+        else
+        {
+                return;
         }
     }
 
@@ -64,7 +95,6 @@ public class Player : MonoBehaviour
         if (other.CompareTag("DieDieDie"))
         {
             GameManager.EndGame();
-            print("Game Over");
         }
     }
     
