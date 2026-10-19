@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     }
     
     
+    
     public void MoveManually(Vector2 direction)
     {
         //if (!Game.IsGameRunning())
