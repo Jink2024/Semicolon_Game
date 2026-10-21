@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private int jumpCount = 0;
     public LayerMask groundLayer;
-
+    
     // I know this should be a separate class. this is just for testing purposes
     void Jump()
     {
