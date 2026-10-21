@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
         jumpCount += 1;
     }
     
+    
     public void MoveManually(Vector2 direction)
     {
         //if (!Game.IsGameRunning())
