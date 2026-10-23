@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
 
         if (other.CompareTag("DieDieDie"))
         {
-            GameManager.EndGame();
+            GameManager.GameLost();
         }
     }
     
