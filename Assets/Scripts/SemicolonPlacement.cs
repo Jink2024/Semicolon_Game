@@ -1,19 +1,19 @@
 using UnityEngine;
 
-public class SemicolonPlacement : MonoBehaviour
+public class SemicolonPlacement_ : MonoBehaviour
 {
-    public GameObject SemicolonPrefab;
-    public GameManager GameManager;
+    public GameObject CounselorText;
+    SemicolonPlacementBox SemicolonPlacementBox;
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void CheckSemicolonPlacement()
     {
-        if (other.gameObject.CompareTag("Semicolon"))
+        if (!SemicolonPlacementBox.SemicolonInRightSpot)
         {
-            print("the semicolon is in the correct place");
-            GameManager.GameWon();
+            
         }
+            
     }
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
