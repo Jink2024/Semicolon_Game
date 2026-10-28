@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5dbd3112-ff9c-468d-bb12-517df435db50" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Semicolon_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semicolon_Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyBoardInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KeyBoardInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Semicolon-Interactions&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Camerawork&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -150,6 +147,7 @@
       <workItem from="1791224367078" duration="2279000" />
       <workItem from="1791829345222" duration="2468000" />
       <workItem from="1792126527381" duration="2091000" />
+      <workItem from="1793212232131" duration="1463000" />
     </task>
     <task id="LOCAL-00001" summary="Added background art; implemented background canvas/panel and layered player character sprite on top.">
       <option name="closed" value="true" />

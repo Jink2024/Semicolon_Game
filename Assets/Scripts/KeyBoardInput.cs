@@ -10,14 +10,27 @@ public class KeyboardInput : MonoBehaviour
     public static bool IsInteractKeyPressed()
     {
         if (Keyboard.current == null) return false;
-        bool keyIsPressed = Keyboard.current[GameParameters.Interact].wasPressedThisFrame;
+        bool interactKeyIsPressed = Keyboard.current[GameParameters.Interact].wasPressedThisFrame;
         
-        if (keyIsPressed && Time.frameCount == lastConsumedFrame)
+        if (interactKeyIsPressed && Time.frameCount == lastConsumedFrame)
         {
             return false;
         }
 
-        return keyIsPressed;
+        return interactKeyIsPressed;
+    }
+
+    public static bool IsCameraSwitchKeyPressed()
+    {
+        if (Keyboard.current == null) return false;
+        bool cameraSwitchKeyIsPressed = Keyboard.current[GameParameters.CameraSwitch].wasPressedThisFrame;
+        
+        if (cameraSwitchKeyIsPressed && Time.frameCount == lastConsumedFrame)
+        {
+            return false;
+        }
+        
+        return cameraSwitchKeyIsPressed;
     }
     
     public static void ConsumeInteractInput()

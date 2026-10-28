@@ -7,4 +7,5 @@ static class GameParameters
     public static int PlayerJumpForce = 2;
 
     public static Key Interact = Key.E;
+    public static Key CameraSwitch = Key.R;
 }
