@@ -3124,7 +3124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!225 &1151717156
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6591,6 +6591,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   GameOverScreen: {fileID: 1151717156}
+  GameWonScreen: {fileID: 0}
+  UI: {fileID: 0}
 --- !u!1 &1905102195
 GameObject:
   m_ObjectHideFlags: 0
