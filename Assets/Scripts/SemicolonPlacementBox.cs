@@ -4,13 +4,12 @@ public class SemicolonPlacementBox : MonoBehaviour
 {
     public GameObject SemicolonPrefab;
     public GameManager GameManager;
-    public static bool SemicolonInRightSpot = false;
+    public bool SemicolonInRightSpot = false;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Semicolon"))
         {
-            print("the semicolon is in the correct place");
             GameManager.GameWon();
             SemicolonInRightSpot = true;
         }

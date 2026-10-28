@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class SemicolonPlacement_ : MonoBehaviour
 {
-    public GameObject CounselorText;
-    SemicolonPlacementBox SemicolonPlacementBox;
+    public UI UI;
+    public SemicolonPlacementBox SemicolonPlacementBox;
 
     public void CheckSemicolonPlacement()
     {
         if (!SemicolonPlacementBox.SemicolonInRightSpot)
         {
-            
+            UI.SendText();
         }
-            
     }
     
     

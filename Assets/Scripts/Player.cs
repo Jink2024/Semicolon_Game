@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public GameManager GameManager;
+    public SemicolonPlacement_ SemicolonPlacement_;
     public GameObject Semicolon;
     
     public static bool HasSemicolon = false;
@@ -80,7 +81,7 @@ public class Player : MonoBehaviour
         if (KeyboardInput.IsInteractKeyPressed() && HasSemicolon)
         {
             PlaceSemicolon();
-            Debug.Log("Placing Item, allegedly");
+            //Debug.Log("Placing Item, allegedly");
         }
     }
 
@@ -100,5 +101,6 @@ public class Player : MonoBehaviour
         Instantiate(Semicolon, spawnPosition, Quaternion.identity);
         
         HasSemicolon = false;
+        SemicolonPlacement_.CheckSemicolonPlacement();
     }
 }

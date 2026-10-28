@@ -5,10 +5,12 @@ public class GameManager : MonoBehaviour
 {
     public CanvasGroup GameOverScreen;
     public CanvasGroup GameWonScreen;
+    public UI UI;
     void Start()
     {
         CanvasGroupDisplayer.Hide(GameOverScreen);
         CanvasGroupDisplayer.Hide(GameWonScreen);
+        UI.UnSendText();
     }
 
     
