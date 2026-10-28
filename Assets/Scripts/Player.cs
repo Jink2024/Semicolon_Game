@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public GameManager GameManager;
