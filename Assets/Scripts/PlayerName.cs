@@ -3,25 +3,30 @@ using TMPro;
 
 public class PlayerName : MonoBehaviour
 {
+    public TMP_InputField inputField;
     public TMP_Text userNameInputText;
-    public string playername;
+    public static string playername;
+    public GameObject canvas;
 
-    void Start() 
+
+    void Start()
     {
-        userNameInputText = canvas.transform.Find("UserNameInputField/Text").GetComponent<TMP_Text>(); //You'll need to put in the actual path in your own hierarchy.
+        userNameInputText.text = inputField.text;
     }
 
     void Update()
     {
-        print("userNameInputText: " + userNameInputText.text);
+        // this shouldnt be in here
+        playername = userNameInputText.text;
+
+        //print("userNameInputText: " + userNameInputText.text);
+        //print("playerName: " + playername);
     }
 
     public void InputYourName() 
     {
         playername = userNameInputText.text;
     }
-    public GameObject canvas;
-    
 }
 
 
