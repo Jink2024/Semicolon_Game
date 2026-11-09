@@ -32,6 +32,19 @@ public class KeyboardInput : MonoBehaviour
         
         return cameraSwitchKeyIsPressed;
     }
+
+    public static bool IsPauseKeyPressed()
+    {
+        if (Keyboard.current == null) return false;
+        bool pauseKeyIsPressed = Keyboard.current[GameParameters.Pause].wasPressedThisFrame;
+
+        if (pauseKeyIsPressed && Time.frameCount == lastConsumedFrame)
+        {
+            return false;
+        }
+        
+        return pauseKeyIsPressed;
+    }
     
     public static void ConsumeInteractInput()
     {
@@ -40,6 +53,8 @@ public class KeyboardInput : MonoBehaviour
     
     void Update()
     {
+        if (GameStateManager.CurrentState == GameState.Paused) return;
+        
         Keyboard keyboard = Keyboard.current;
         if (keyboard == null) return;
        

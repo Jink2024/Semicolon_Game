@@ -8,4 +8,5 @@ static class GameParameters
 
     public static Key Interact = Key.E;
     public static Key CameraSwitch = Key.R;
+    public static Key Pause = Key.Escape;
 }

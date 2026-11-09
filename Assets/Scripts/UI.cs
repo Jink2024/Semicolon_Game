@@ -4,6 +4,8 @@ using UnityEngine;
 public class UI : MonoBehaviour
 {
     public GameObject GuidanceCounselorText;
+    
+    [SerializeField] private GameObject pauseMenuPanel;
 
     public void SendText()
     {
@@ -15,8 +17,6 @@ public class UI : MonoBehaviour
     {
         GuidanceCounselorText.SetActive(false);
     }
-    
-    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
