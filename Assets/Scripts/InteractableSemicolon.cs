@@ -11,6 +11,7 @@ public class InteractableSemicolon : InteractableObject
     {
         Player.HasSemicolon = true;
         KeyboardInput.ConsumeInteractInput();
+        GameEvents.TriggerSemicolonPickup();
         
         Destroy(gameObject);
     }

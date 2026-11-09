@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dbd3112-ff9c-468d-bb12-517df435db50" name="Changes" comment="" />
+    <list default="true" id="5dbd3112-ff9c-468d-bb12-517df435db50" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Semicolon_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Semicolon_Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractableSemicolon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractableSemicolon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +19,12 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="Camera2" />
+    <option name="BRANCH" value="Camerawork" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Camerawork" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,9 +43,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/hexummoffett/RiderProjects/Semicolon_Game/Assets/Scenes/TutorialLevel.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/TutorialLevel.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/hexummoffett/RiderProjects/Semicolon_Game/Assets/Scripts/GameParameters.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InteractableSemicolon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeyBoardInput.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,7 +65,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "ObserverAndEvent",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -147,6 +151,10 @@
       <workItem from="1791829345222" duration="2468000" />
       <workItem from="1792126527381" duration="2091000" />
       <workItem from="1793212232131" duration="1463000" />
+      <workItem from="1793819964595" duration="1973000" />
+      <workItem from="1793931539233" duration="12000" />
+      <workItem from="1793991889477" duration="2997000" />
+      <workItem from="1794215318036" duration="947000" />
     </task>
     <task id="LOCAL-00001" summary="Added background art; implemented background canvas/panel and layered player character sprite on top.">
       <option name="closed" value="true" />
@@ -188,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790965869946</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Linked up cameras in Unity">
+      <option name="closed" value="true" />
+      <created>1793214545589</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793214545589</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +255,8 @@
     <MESSAGE value="Added cinemachine frfr" />
     <MESSAGE value="Minor adjustments: speed, colliders" />
     <MESSAGE value="Camera works :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Camera works :D" />
+    <MESSAGE value="Linked up cameras in Unity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Linked up cameras in Unity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

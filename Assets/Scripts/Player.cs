@@ -103,5 +103,6 @@ public class Player : MonoBehaviour
         
         HasSemicolon = false;
         SemicolonPlacement_.CheckSemicolonPlacement();
+        GameEvents.TriggerSemicolonPlace();
     }
 }
