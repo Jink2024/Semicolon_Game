@@ -15,7 +15,6 @@ public class AudioManager : MonoBehaviour
 
     private void OnEnable()
     {
-        // Subscribe to global game events
         GameEvents.OnSemicolonPickup += PlayPickupSound;
         GameEvents.OnSemicolonPlace += PlayPlaceSound;
     }
